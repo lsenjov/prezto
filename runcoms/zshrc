@@ -24,3 +24,18 @@ PATH="${PATH}:/home/logan/bin"
 
 alias sd="sudo docker "
 #alias az="azure-cli "
+
+gittags() {
+  git tag -l "$1/*" --sort -v:refname | head -10
+}
+
+#id16879 start
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+autoload -Uz promptinit
+promptinit
+prompt powerlevel10k
+#id16879 end
+
+alias vi="nvim "
