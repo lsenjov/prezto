@@ -37,6 +37,7 @@ alias vi="nvim "
 alias gitlatest='git for-each-ref --sort=-committerdate refs/heads/ | head'
 alias gdiff='git diff --color-moved=blocks '
 alias gdiffc='git diff --cached --color-moved=blocks '
+alias cdc='cd ~/code/lsenjov'
 bindkey -v
 
 source <(fzf --zsh)
